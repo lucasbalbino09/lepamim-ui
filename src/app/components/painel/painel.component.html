@@ -1,0 +1,35 @@
+<div class="foto-banner">
+  <img
+    src="https://static.vecteezy.com/ti/vetor-gratis/p1/5349020-banner-horizontal-com-criancas-e-livros-meninos-e-meninas-estao-perto-livros-livros-para-criancas-e-criancas-eu-amo-ler-criancas-dia-livro-festival-poster-para-loja-loja-biblioteca-vetor.jpg"
+    alt="foto-banner"
+  />
+</div>
+<div class="tiulo">
+  <h2>Destaques</h2>
+</div>
+<div class="livros-destaques">  
+  <div class="exibicoes-livros" *ngFor="let item of livrosDestaques">
+    <p-card
+      header="Advanced Card"
+      subheader="{{ item.anoLancamento }}"
+      [header]="item.titulo"
+      class="container"
+    >
+      <ng-template pTemplate="header">
+        <img [src]="item.capa" style="height: 50%;" />
+      </ng-template>
+      <p>{{ item.sinopse }}</p>
+      <a
+        [href]="item.url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="p-button font-bold"
+      >
+        Ler
+      </a>
+    </p-card>
+  </div>
+</div>
+<div class="tiulo">
+  <h2>Dinâmicas mais Acessadas</h2>
+</div>

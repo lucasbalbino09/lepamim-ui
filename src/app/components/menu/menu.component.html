@@ -1,0 +1,17 @@
+<div class="nav-bar">
+    <div class="botoes">
+        <p-sidebar [(visible)]="sidebarVisible">
+            <h3>Categorias</h3>
+           <p-panelMenu [model]="items" styleClass="w-full md:w-20rem" />
+        </p-sidebar>
+        <p-button (onClick)="sidebarVisible = true" icon="pi pi-align-justify" />
+    </div>
+    <h2 style="color: orange;">Lêpamim</h2>
+    <div class="imagem-lepamim"> 
+            <!-- <p-image 
+        src="../../../../dist/lepamim.png" 
+        alt="lepamim-imagem"/> -->
+        
+        <p-button icon="pi pi-prime" />
+    </div>
+</div>
