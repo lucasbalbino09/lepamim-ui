@@ -7,7 +7,7 @@
 <div class="tiulo">
   <h2>Destaques</h2>
 </div>
-<div class="livros-destaques">  
+<div class="livros-destaques">
   <div class="exibicoes-livros" *ngFor="let item of livrosDestaques">
     <p-card
       header="Advanced Card"
@@ -16,7 +16,7 @@
       class="container"
     >
       <ng-template pTemplate="header">
-        <img [src]="item.capa" style="height: 50%;" />
+        <img [src]="item.capa" style="height: 50%" />
       </ng-template>
       <p>{{ item.sinopse }}</p>
       <a
@@ -32,4 +32,23 @@
 </div>
 <div class="tiulo">
   <h2>Dinâmicas mais Acessadas</h2>
+</div>
+<div class="dinamicas">
+  <div class="exibicao-dinamicas" *ngFor="let item of dinamicas">
+    <p-fieldset legend="{{item.titulo}}" [toggleable]="true">
+      <p>{{ item.descricaoAtividade }}</p>
+      <p>{{ item.objetivo }}</p>
+      <p>Quantidade de participantes: {{ item.qtdParticipantes }}</p>
+      <p>Faixa etaria: {{ item.faixaEtaria }}</p>    
+      <p-divider type="dotted" />
+      <ng-container *ngIf="item.materialdaDinamica && item.materialdaDinamica.length > 0">
+        <h3>Material:</h3>
+        <mat-list>
+          <mat-list-item *ngFor="let list of item.materialdaDinamica">
+            {{list}}
+          </mat-list-item>
+        </mat-list>
+      </ng-container>
+    </p-fieldset>
+    </div>
 </div>

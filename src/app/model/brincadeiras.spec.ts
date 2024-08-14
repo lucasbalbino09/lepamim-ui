@@ -1,7 +1,7 @@
-import { Brincadeiras } from './brincadeiras';
+import { Brincadeira } from './brincadeiras';
 
 describe('Brincadeiras', () => {
   it('should create an instance', () => {
-    expect(new Brincadeiras()).toBeTruthy();
+    expect(new Brincadeira()).toBeTruthy();
   });
 });

@@ -6,6 +6,7 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { ImageModule } from 'primeng/image';
 import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
+import { FieldsetModule } from 'primeng/fieldset';
 
 @NgModule({
   declarations: [],
@@ -16,7 +17,8 @@ import { DividerModule } from 'primeng/divider';
     PanelMenuModule,
     ImageModule,
     CardModule,
-    DividerModule
+    DividerModule,
+    FieldsetModule
   ],
   exports: [
     ButtonModule,
@@ -24,7 +26,8 @@ import { DividerModule } from 'primeng/divider';
     PanelMenuModule,
     ImageModule,
     CardModule,
-    DividerModule
+    DividerModule,
+    FieldsetModule
   ]
 })
 export class PrimeNgModule { }

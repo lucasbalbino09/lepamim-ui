@@ -1,10 +1,13 @@
 import { Base } from "./base";
 
 
-export class Brincadeiras extends Base {
+export class Brincadeira extends Base {
     duracao = 0;
-    proposta = ''
+    objetivo = ''
     faixaEtaria = ''
+    qtdParticipantes = 0
+    descricaoAtividade = ''
+    materialdaDinamica? : string[] = []
     constructor() {
         super();
     }
