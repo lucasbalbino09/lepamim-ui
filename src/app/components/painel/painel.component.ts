@@ -41,7 +41,7 @@ export class PainelComponent {
       duracao: 30,
       faixaEtaria: ' de 6 a 8 anos. ',
       descricaoAtividade:
-        'O objetivo é construir algo juntas, mas com uma regrinha especial: cada membro do grupo só pode usar uma mão para construir.',
+        'O objetivo é construir algo juntos, mas com uma regrinha especial: cada membro do grupo só pode usar uma mão para construir.',
       objetivo:
         'Incentivar o trabalho em equipe, colaboração, e comunicação entre as crianças.',
       qtdParticipantes: 6,

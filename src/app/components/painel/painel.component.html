@@ -35,20 +35,34 @@
 </div>
 <div class="dinamicas">
   <div class="exibicao-dinamicas" *ngFor="let item of dinamicas">
-    <p-fieldset legend="{{item.titulo}}" [toggleable]="true">
-      <p>{{ item.descricaoAtividade }}</p>
-      <p>{{ item.objetivo }}</p>
-      <p>Quantidade de participantes: {{ item.qtdParticipantes }}</p>
-      <p>Faixa etaria: {{ item.faixaEtaria }}</p>    
+    <p-fieldset legend="{{ item.titulo }}" [toggleable]="true">
+      <p>
+        <span>Atividade:</span>
+        {{ item.descricaoAtividade }}
+      </p>
+      <p>
+        <span>Objetivo:</span>
+        {{ item.objetivo }}
+      </p>
+      <p>
+        <span>Quantidade de participantes:</span>
+        {{ item.qtdParticipantes }}
+      </p>
+      <p>
+        <span>Faixa etaria:</span>
+        {{ item.faixaEtaria }}
+      </p>
       <p-divider type="dotted" />
-      <ng-container *ngIf="item.materialdaDinamica && item.materialdaDinamica.length > 0">
+      <ng-container
+        *ngIf="item.materialdaDinamica && item.materialdaDinamica.length > 0"
+      >
         <h3>Material:</h3>
         <mat-list>
           <mat-list-item *ngFor="let list of item.materialdaDinamica">
-            {{list}}
+            {{ list }}
           </mat-list-item>
         </mat-list>
       </ng-container>
     </p-fieldset>
-    </div>
+  </div>
 </div>

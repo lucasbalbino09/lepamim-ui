@@ -10,7 +10,7 @@
 .tiulo{
     background-color: rgba(227, 227, 227, 0.418) ;
     text-align: center;
-    margin-top: 3px;
+    margin-top: 15px;
     padding: 10px;
 }
 .livros-destaques {
@@ -44,7 +44,11 @@
 .dinamicas {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    margin-top: 25px;
-    
+    gap: 50px;  
+    .exibicao-dinamicas {
+        text-align: center;
+        span {
+            font-weight: bold;
+        }
+    }
 }
